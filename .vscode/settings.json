@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "typescript.format.enable": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    }
+}
