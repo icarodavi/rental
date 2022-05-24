@@ -4,5 +4,8 @@
     "typescript.format.enable": false,
     "editor.codeActionsOnSave": {
       "source.organizeImports": false
-    }
+    },
+    "cSpell.ignoreWords": [
+      "openapi"
+    ]
 }
