@@ -1,0 +1,82 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    container_name: rentx
+    ports:
+      - "3333:3333"
+    volumes:
+      - .:/usr/app
+    # environment:
+    #   - MYSQL_HOST=mysql
+    #   - MYSQL_PORT=3306
+    #   - MYSQL_USER=root
+    #   - MYSQL_PASSWORD=root
+    #   - MYSQL_DATABASE=test
+    #   - MYSQL_CHARSET=utf8
+    #   - MYSQL_COLLATION=utf8_unicode_ci
+    #   - MYSQL_MAX_POOL=10
+    #   - MYSQL_MAX_IDLE_TIME=30
+    #   - MYSQL_MAX_LIFETIME=1800
+    #   - MYSQL_MAX_CONNECTION_LIFETIME=0
+    #   - MYSQL_MAX_CONNECTION_IDLE_TIME=0
+    #   - MYSQL_MAX_CONNECTION_LIFETIME_CLIENT=0
+    #   - MYSQL_MAX_CONNECTION_IDLE_TIME_CLIENT=0
+    #   - MYSQL_MAX_CONNECTION_LIFETIME_CONSUMER=0
+    #   - MYSQL_MAX_CONNECTION_IDLE_TIME_CONSUMER=0
+    #   - MYSQL_MAX_CONNECTION_LIFETIME_CONSUMER_PER_HOST=0
+    #   - MYSQL_MAX_CONNECTION_IDLE_TIME_CONSUMER_PER_HOST=0
+    #   - MYSQL_MAX_CONNECTION_LIFETIME_CONSUMER_PER_HOST_PER_PORT=0
+    #   - MYSQL_MAX_CONNECTION_IDLE_TIME_CONSUMER_PER_HOST_PER_PORT=0
+    #   - MYSQL_MAX_CONNECTION_LIFETIME_CONSUMER_PER_HOST_PER_PORT_PER_USER=0
+    #   - MYSQL_MAX_CONNECTION_IDLE_TIME_CONSUMER_PER_HOST_PER_PORT_PER_USER=0
+    #   - MYSQL_MAX_CONNECTION_LIFETIME_CONSUMER_PER_HOST_PER_PORT_PER_USER_PER_DB=
+
+  # name: "{{.Name}}"
+  #   image: "{{.Image}}"
+  #   ports:
+  #     - "{{.Port}}:{{.Port}}"
+  #   environment:
+  #     - "{{.Env}}"
+  #   volumes:
+  #     - "{{.Volume}}:/data"
+  #   networks:
+  #     - "{{.Network}}"
+  #   restart: always
+  #   labels:
+  #     - "{{.Label}}"
+  #   depends_on:
+  #     - "{{.DependsOn}}"
+  #   expose:
+  #     - "{{.Expose}}"
+  #   command:
+  #     - "{{.Command}}"
+  #   user: "{{.User}}"
+  #   working_dir: "{{.WorkingDir}}"
+  #   entrypoint: "{{.Entrypoint}}"
+  #   hostname: "{{.Hostname}}"
+  #   domainname: "{{.Domainname}}"
+  #   mem_limit: "{{.MemLimit}}"
+  #   memswap_limit: "{{.MemswapLimit}}"
+  #   cpu_quota: "{{.CpuQuota}}"
+  #   cpu_period: "{{.CpuPeriod}}"
+  #   cpus: "{{.Cpus}}"
+  #   cpu_shares: "{{.CpuShares}}"
+  #   host_config:
+  #     - "{{.HostConfig}}"
+  #   tty: "{{.Tty}}"
+  #   stdin_open: "{{.StdinOpen}}"
+  #   dns: "{{.Dns}}"
+  #   dns_search: "{{.DnsSearch}}"
+  #   extra_hosts: "{{.ExtraHosts}}"
+  #   links: "{{.Links}}"
+  #   security_opt: "{{.SecurityOpt}}"
+  #   ipc_mode: "{{.IpcMode}}"
+  #   pid_mode: "{{.PidMode}}"
+  #   privileged: "{{.Privileged}}"
+  #   cap_add: "{{.CapAdd}}"
+  #   cap_drop: "{{.CapDrop}}"
+  #   restart_policy: "{{.RestartPolicy}}"
+  #   restart_retries: "{{.RestartRetries}}"
+  #   devices: "
