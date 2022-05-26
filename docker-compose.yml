@@ -1,6 +1,22 @@
 version: "3.7"
 
 services:
+  
+  database:
+    image: postgres
+    container_name: database
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=rentx
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    network_mode: host
+    
+  
   app:
     build: .
     container_name: rentx
@@ -8,6 +24,8 @@ services:
       - "3333:3333"
     volumes:
       - .:/usr/app
+    network_mode: host
+
     # environment:
     #   - MYSQL_HOST=mysql
     #   - MYSQL_PORT=3306
@@ -80,3 +98,6 @@ services:
   #   restart_policy: "{{.RestartPolicy}}"
   #   restart_retries: "{{.RestartRetries}}"
   #   devices: "
+# volumes:
+#   pgdata:
+#     driver: local
