@@ -1,15 +1,18 @@
 import { DataSource } from 'typeorm';
 
-const AppDataSource = new DataSource({
-  type: 'postgres',
-  host: 'localhost',
-  port: 5432,
-  username: 'root',
-  password: 'admin',
-  database: 'rentx',
-  // entities: [Photo],
-  synchronize: true,
-  logging: false,
-});
+// import ormconfig from '../../ormconfig.json';
 
-export default AppDataSource;
+// const AppDataSource = new DataSource({
+//   type: 'postgres',
+//   host: 'localhost',
+//   port: 5432,
+//   username: 'root',
+//   password: 'admin',
+//   database: 'rentx',
+//   synchronize: true,
+//   logging: false,
+//   migrations: [`${__dirname}./migrations/*{.ts,.js}`],
+// });
+
+// AppDataSource.initialize();
+// export default AppDataSource;

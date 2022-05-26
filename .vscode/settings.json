@@ -6,6 +6,7 @@
       "source.organizeImports": false
     },
     "cSpell.ignoreWords": [
-      "openapi"
+      "openapi",
+      "ormconfig"
     ]
 }

@@ -1,3 +1,13 @@
 {
-  
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "root",
+  "password": "admin",
+  "database": "rentx",
+  "synchronize": true,
+  "logging": false,
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
