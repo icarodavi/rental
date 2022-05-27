@@ -29,16 +29,16 @@ services:
     depends_on:
       - database
     
-  rentx_pgadmin:
-    image: dpage/pgadmin4
-    container_name: rentx_pgadmin
-    restart: always
-    ports:
-      - 5051:80
-    environment:
-      PGADMIN_DEFAULT_EMAIL: icarodavi@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: 123456
-      PGADMIN_LISTEN_ADDRESS: 0.0.0.0
+  # rentx_pgadmin:
+  #   image: dpage/pgadmin4
+  #   container_name: rentx_pgadmin
+  #   restart: always
+  #   ports:
+  #     - 5051:80
+  #   environment:
+  #     PGADMIN_DEFAULT_EMAIL: icarodavi@gmail.com
+  #     PGADMIN_DEFAULT_PASSWORD: 123456
+  #     PGADMIN_LISTEN_ADDRESS: 0.0.0.0
 
 
 

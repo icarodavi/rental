@@ -2,10 +2,11 @@ import express from 'express';
 import swaggerUI from 'swagger-ui-express';
 
 import swaggerFile from '../swagger.json';
-import { AppDataSource } from './data-source';
+import AppDataSource from './data-source';
 import { router } from './routes';
 
 const app = express();
+//
 AppDataSource.initialize()
   .then(async () => {
     app.use(express.json());
@@ -17,4 +18,5 @@ AppDataSource.initialize()
   })
   .catch((err) => {
     console.log(err);
+    //
   });
