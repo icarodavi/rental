@@ -1,3 +1,3 @@
-import { AppDataSource } from './database';
+import AppDataSource from './database';
 
 export default AppDataSource;

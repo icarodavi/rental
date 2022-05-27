@@ -1,11 +1,11 @@
 import { Repository } from 'typeorm';
 
-import { AppDataSource } from '../../../../database';
+import AppDataSource from '../../../../database';
 import { Category } from '../../entities/Category';
 import { ICategoriesRepository, ICategoryDTO } from '../ICategoriesRepository';
 
 class CategoriesRepository implements ICategoriesRepository {
-  repository: Repository<Category>;
+  public repository: Repository<Category>;
   // eslint-disable-next-line no-use-before-define
   private static INSTANCE: CategoriesRepository;
 

@@ -4,7 +4,7 @@ import { DataSource } from 'typeorm';
 import { Category } from '../modules/cars/entities/Category';
 import { Specification } from '../modules/cars/entities/Specification';
 
-export const AppDataSource = new DataSource({
+const AppDataSource = new DataSource({
   type: 'postgres',
   host: 'database_ignite',
   port: 5432,
@@ -13,7 +13,8 @@ export const AppDataSource = new DataSource({
   database: 'rentx',
   synchronize: true,
   logging: true,
-  entities: [Category],
+  entities: [Category, Specification],
   migrations: [`${__dirname}/database/migrations/*{.ts,.js}`],
 });
 //
+export default AppDataSource;

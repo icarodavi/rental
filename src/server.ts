@@ -7,7 +7,7 @@ import { router } from './routes';
 import './shared/container';
 
 const app = express();
-//
+
 AppDataSource.initialize()
   .then(async () => {
     app.use(express.json());
