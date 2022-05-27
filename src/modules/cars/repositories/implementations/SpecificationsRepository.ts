@@ -9,8 +9,7 @@ import {
 
 class SpecificationsRepository implements ISpecificationsRepository {
   private repository: Repository<Specification>;
-  // eslint-disable-next-line no-use-before-define
-  private static INSTANCE: SpecificationsRepository;
+
   constructor() {
     this.repository = AppDataSource.getRepository(Specification);
   }
@@ -27,7 +26,12 @@ class SpecificationsRepository implements ISpecificationsRepository {
       name,
       description,
     });
-    this.repository.save(specification);
+    await this.repository.save(specification);
+  }
+
+  async list(): Promise<Specification[]> {
+    const all = await this.repository.find();
+    return all;
   }
 }
 
