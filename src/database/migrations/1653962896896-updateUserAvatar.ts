@@ -8,6 +8,7 @@ export class updateUserAvatar1653962896896 implements MigrationInterface {
         name: 'avatar',
         type: 'varchar',
         isNullable: true,
+        default: null,
       })
     );
   }
