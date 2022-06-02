@@ -2,10 +2,10 @@
   "type": "postgres",
   "host": "localhost",
   "port": 5432,
-  "username": "root",
-  "password": "admin",
+  "username": "docker",
+  "password": "ignite",
   "database": "rentx",
-  "synchronize": true,
+  "synchronize": false,
   "logging": false,
   "cli": {
     "migrationsDir": "./src/database/migrations"
