@@ -17,7 +17,7 @@ describe("#Create car", () => {
       daily_rate: 100,
       license_plate: "abc-123",
       brand: "brand",
-      final_amount: 1000,
+      fine_amount: 1000,
       category_id: "category",
     });
     expect(car).toHaveProperty("id");
@@ -31,7 +31,7 @@ describe("#Create car", () => {
         daily_rate: 100,
         license_plate: "abc-123",
         brand: "brand",
-        final_amount: 1000,
+        fine_amount: 1000,
         category_id: "category",
       });
       await createCarUseCase.execute({
@@ -40,7 +40,7 @@ describe("#Create car", () => {
         daily_rate: 100,
         license_plate: "abc-123",
         brand: "brand",
-        final_amount: 1000,
+        fine_amount: 1000,
         category_id: "category",
       });
     }).rejects.toBeInstanceOf(AppError);
@@ -53,7 +53,7 @@ describe("#Create car", () => {
       daily_rate: 100,
       license_plate: "abc-123",
       brand: "brand",
-      final_amount: 1000,
+      fine_amount: 1000,
       category_id: "category",
     });
 

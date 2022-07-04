@@ -8,7 +8,7 @@ interface ICarsRepository {
     category_id,
     daily_rate,
     description,
-    final_amount,
+    fine_amount,
     license_plate,
   }: ICreateCarDTO): Promise<Car>;
 

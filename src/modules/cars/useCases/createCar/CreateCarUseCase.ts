@@ -9,7 +9,7 @@ interface IRequest {
   description: string;
   daily_rate: number;
   license_plate: string;
-  final_amount: number;
+  fine_amount: number;
   brand: string;
   category_id: string;
 }
@@ -26,7 +26,7 @@ class CreateCarUseCase {
     daily_rate,
     license_plate,
     brand,
-    final_amount,
+    fine_amount,
     category_id,
   }: IRequest): Promise<Car> {
     const carAlreadyExists = await this.carsRepository.findByLicensePlate(
@@ -42,7 +42,7 @@ class CreateCarUseCase {
       daily_rate,
       license_plate,
       brand,
-      final_amount,
+      fine_amount,
       category_id,
     });
     return car;
