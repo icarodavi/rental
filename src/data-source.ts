@@ -1,3 +1,3 @@
-import AppDataSource from './database';
+import AppDataSource from "./shared/infra/typeorm";
 
 export default AppDataSource;
