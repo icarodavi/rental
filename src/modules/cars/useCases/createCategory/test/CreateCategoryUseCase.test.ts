@@ -1,5 +1,5 @@
-import { CreateCategoryUseCase } from "../../useCases/createCategory/CreateCategoryUseCase";
-import { CategoriesRepositoryInMemory } from "../in-memory/CategoriesRepositoryInMemory";
+import { CategoriesRepositoryInMemory } from "../../../repositories/in-memory/CategoriesRepositoryInMemory";
+import { CreateCategoryUseCase } from "../CreateCategoryUseCase";
 
 let categoriesRepositoryInMemory: CategoriesRepositoryInMemory;
 let createCategoriesUseCase: CreateCategoryUseCase;
